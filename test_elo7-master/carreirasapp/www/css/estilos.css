@@ -1,0 +1,63 @@
+
+body {
+  background-color: #f2f2f2;
+}
+
+.titulo-img {
+  width: 90px;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.titulo-opcoes {
+  font-size: 1.3em;
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+.titulo-opcoes li:first-child {
+  margin-right: 20px;
+}
+
+.topo-fixo {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.imagem-fundo {
+  width: 100%;
+  padding-top: 3.51em;
+}
+
+.section {
+  position: relative;
+}
+
+.titulo-na-pagina {
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -80%);
+
+}
+
+.titulo-na-pagina img {
+  width: 190px;
+}
+
+.botao {
+  height: 34px;
+  width: 298px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  font-style: normal !important;
+  font-family: "Roboto", sans-serif;
+}
+
+#submenu {
+  top: 75px;
+  width: 299px;
+}
