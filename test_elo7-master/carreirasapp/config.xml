@@ -7,6 +7,10 @@
     <author email="andrediasgustavo@gmail.com">
         André Dias
     </author>
+    <preference name="StatusBarBackgroundColor" value="#F5F5F5" />
+    <plataform name="ios">
+        <preference name="StatusBarOverlaysWebView" value="false" />
+    </plataform>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -23,5 +27,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="browser" spec="^4.1.0" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.2.3" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
 </widget>

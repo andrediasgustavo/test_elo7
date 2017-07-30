@@ -1,6 +1,6 @@
 
 body {
-  background-color: #f2f2f2;
+  background-color: white;
 }
 
 .titulo-img {
@@ -60,4 +60,52 @@ body {
 #submenu {
   top: 75px;
   width: 299px;
+}
+
+.bloco {
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.bloco h3 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.bloco p {
+  font-size: 15px;
+}
+
+.bloco img {
+  width: 160px;
+}
+
+.conheca-areas {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.conheca-areas img {
+  height: 50px;
+}
+
+.titulo-areas {
+  font-weight: bold;
+  font-size: 14px !important;
+}
+
+.conheca-areas p {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.card-panel {
+  margin: 0 0 0 0;
+}
+
+@media (max-width: 760px) {
+  .adm {
+    padding: 11px;
+  }
 }
