@@ -104,6 +104,27 @@ body {
   margin: 0 0 0 0;
 }
 
+.rodape {
+  padding-bottom: 3px;
+  padding-top: 1px;
+  text-align: center;
+}
+
+.rodape p {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rodape img {
+  width: 45px;
+  padding: 5px;
+}
+
+.rodape ul li {
+  display: inline;
+}
+
 @media (max-width: 760px) {
   .adm {
     padding: 11px;
