@@ -14,14 +14,12 @@
         "cordova-browser": "^4.1.0",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-statusbar": "^2.2.3",
-        "cordova-plugin-whitelist": "^1.3.2",
-        "cordova-plugin-firebase": "^0.1.22"
+        "cordova-plugin-whitelist": "^1.3.2"
     },
     "cordova": {
         "plugins": {
             "cordova-plugin-whitelist": {},
-            "cordova-plugin-statusbar": {},
-            "cordova-plugin-firebase": {}
+            "cordova-plugin-statusbar": {}
         },
         "platforms": [
             "android",
