@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="icons/material.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 </head>
 <body>
 
@@ -15,8 +16,8 @@
         <img src="img/logo.png" class="titulo-img" alt="Titulo Elo7">
 
         <ul class="valign-wrapper titulo-opcoes">
-              <li><a href="" class="teal-text text-lighten-2">Engenharia</a></li>
-              <li><a href="" class="teal-text text-lighten-2">Eventos</a></li>
+              <li><a href="http://carreira.elo7.com.br/engenharia/" class="linkEngenharia teal-text text-lighten-2">Engenharia</a></li>
+              <li><a href="http://carreira.elo7.com.br/eventos-engenharia/" id="eventos" class="teal-text text-lighten-2">Eventos</a></li>
         </ul>
       </div>
     </div>
@@ -30,120 +31,135 @@
           class="btn grey lighten-4 black-text waves-effect waves-light botao dropdown-button">Escolha um Departamento
           <i class="material-icons right">arrow_drop_down</i></i>
         <ul class="dropdown-content" id="submenu">
-          <li><a class="black-text">Engenharia</a></li>
-          <li><a class="black-text">Atendimento</a></li>
-          <li><a class="black-text">Comunicação &amp marketing</a></li>
-          <li><a class="black-text">Desenvolvimento de vendedores</a></li>
-          <li><a class="black-text">Design</a></li>
-          <li><a class="black-text">Produto</a></li>
-          <li><a class="black-text">Trust &amp Safety</a></li>
-          <li><a class="black-text">Administração/Financeiro</a></li>
+          <li><a href="http://carreira.elo7.com.br/engenharia/" class="linkEngenharia black-text">Engenharia</a></li>
+          <li><a href="http://carreira.elo7.com.br/atendimento/" class="linkAtendimento black-text">Atendimento</a></li>
+          <li><a href="http://carreira.elo7.com.br/comunicacao-e-marketing/" class="linkComunicacao black-text">Comunicação &amp marketing</a></li>
+          <li><a href="http://carreira.elo7.com.br/desenvolvimento-de-vendedores/" class="linkVendedores black-text">Desenvolvimento de vendedores</a></li>
+          <li><a href="http://carreira.elo7.com.br/design/" class="linkDesign black-text">Design</a></li>
+          <li><a href="http://carreira.elo7.com.br/produto/" class="linkProduto black-text">Produto</a></li>
+          <li><a href="http://carreira.elo7.com.br/trust-and-safety/" class="linkTrust black-text">Trust &amp Safety</a></li>
+          <li><a href="http://carreira.elo7.com.br/administrativo-financeiro/" class="linkAdm black-text">Administração/Financeiro</a></li>
         </ul>
       </div>
     </div>
 
     <div class="bloco">
-      <h3>Nossa cultura</h3>
-      <p>Somos orientados pela satisfação e fidelização de nossos clientes</p>
+      <h3 id="tituloCultura">Nossa cultura</h3>
+      <p id="cultura">Somos orientados pela satisfação e fidelização de nossos clientes</p>
     </div>
 
     <div class="bloco">
       <img src="img/criatividade.png" alt="criatividade">
-      <h3>Criatividade</h3>
-      <p>Estimulamos a <b>intervenção humana</b> como algo insubstituível. Nosso ambiente é inspirados</p>
+      <h3 id="tituloCriatividade">Criatividade</h3>
+      <p id="criatividade">Estimulamos a <b>intervenção humana</b> como algo insubstituível. Nosso ambiente é inspirados</p>
     </div>
 
     <div class="bloco">
       <img src="img/colaboracao.png" alt="colaboracao">
-      <h3>Colaboração</h3>
-      <p>Valorizamos o trabalho em equipe e as <b>habilidades individuais.</b> Incentivamos o <b> empreendedorismo</b>
+      <h3 id="tituloColaboracao">Colaboração</h3>
+      <p id="colaboracao">Valorizamos o trabalho em equipe e as <b>habilidades individuais.</b> Incentivamos o <b> empreendedorismo</b>
         e formamos um time fora de série</p>
     </div>
 
     <div class="bloco">
       <img src="img/tec-ino.png" alt="tecnologia e inovacao">
-      <h3>Tecnologia e inovação</h3>
-      <p>Utilizamos a <b>tecnologia</b> para melhorar continuamente nosso negócio. Transformamos e <b>conectamos</b>
+      <h3 id="tituloTecnologia">Tecnologia e inovação</h3>
+      <p id="tecnologia">Utilizamos a <b>tecnologia</b> para melhorar continuamente nosso negócio. Transformamos e <b>conectamos</b>
         pessoas</p>
     </div>
 
     <div class="grey lighten-4 conheca-areas">
-      <p class="titulo-areas">Conheça nossas áreas</p>
+      <p class="titulo-areas" id="conheca">Conheça nossas áreas</p>
       <div class="row">
         <div class="col s6 m6 l6">
           <div class="card-panel white">
-            <img src="img/ic-engenharia.png">
-            <p class="grey-text">Engenharia</p>
+            <a class="clickable-area linkEngenharia" href="http://carreira.elo7.com.br/engenharia/">
+              <img src="img/ic-engenharia.png">
+              <p class="grey-text">Engenharia</p>
+            </a>
           </div>
         </div>
         <div class="col s6 m6 l6">
           <div class="card-panel white">
-            <img src="img/ic-atendimento.png">
-            <p class="grey-text">Atendimento</p>
+            <a class="clickable-area linkAtendimento" href="http://carreira.elo7.com.br/atendimento/">
+              <img src="img/ic-atendimento.png">
+              <p class="grey-text">Atendimento</p>
+            </a>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col s6 m6 l6">
           <div class="card-panel white">
-            <img src="img/ic-comunicacao-mkt.png">
-            <p class="grey-text">Comunicação &amp marketing</p>
+            <a class="clickable-area linkComunicacao" href="http://carreira.elo7.com.br/comunicacao-e-marketing/">
+              <img src="img/ic-comunicacao-mkt.png">
+              <p class="grey-text">Comunicação &amp marketing</p>
+            </a>
           </div>
         </div>
         <div class="col s6 m6 l6">
           <div class="card-panel white">
-            <img src="img/ic-desenvolvimento-vendedores.png">
-            <p class="grey-text">Desenvolvimento de vendedores</p>
+            <a class="clickable-area linkVendedores" href="http://carreira.elo7.com.br/desenvolvimento-de-vendedores/">
+              <img src="img/ic-desenvolvimento-vendedores.png">
+              <p class="grey-text">Desenvolvimento de vendedores</p>
+            </a>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col s6 m6 l6">
           <div class="card-panel white">
-            <img src="img/ic-design.png">
-            <p class="grey-text">Design</p>
+            <a class="clickable-area linkDesign" href="http://carreira.elo7.com.br/design/">
+              <img src="img/ic-design.png">
+              <p class="grey-text">Design</p>
+            </a>
           </div>
         </div>
         <div class="col s6 m6 l6">
           <div class="card-panel white">
-            <img src="img/ic-produto.png">
-            <p class="grey-text">Produto</p>
+            <a class="clickable-area linkProduto" href="http://carreira.elo7.com.br/produto/">
+              <img src="img/ic-produto.png">
+              <p class="grey-text">Produto</p>
+            </a>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col s6 m6 l6 ">
           <div class="card-panel white">
-            <img src="img/ic-trustnsafety.png">
-            <p class="grey-text">Trust &amp Safety</p>
+            <a class="clickable-area linkTrust" href="http://carreira.elo7.com.br/trust-and-safety/">
+              <img src="img/ic-trustnsafety.png">
+              <p class="grey-text">Trust &amp Safety</p>
+            </a>
           </div>
         </div>
         <div class="col s6 m6 l6">
           <div class="card-panel white adm">
-            <img src="img/ic-adm-financeiro.png">
-            <p class="grey-text">Administração/ Financeiro</p>
+            <a class="clickable-area linkAdm" href="http://carreira.elo7.com.br/administrativo-financeiro/">
+              <img src="img/ic-adm-financeiro.png">
+              <p class="grey-text">Administração/ Financeiro</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="grey darken-2 rodape">
-      <p class="white-text">conecte-se com a gente</p>
+      <p class="white-text" id="conectar">conecte-se com a gente</p>
       <ul>
-        <li><a href="https://www.facebook.com/Elo7br"><img src="img/facebook.png"></a></li>
-        <li><a href="https://www.instagram.com/elo7br"><img src="img/instagram.png"></a></li>
-        <li><a href="https://plus.google.com/+Elo7Br"><img src="img/googleplus.png"></a></li>
-        <li><a href="https://br.pinterest.com/elo7br"><img src="img/pinterest-light.png"></a></li>
-        <li><a href="https://twitter.com/elo7"><img src="img/twitter.png"></a></li>
-        <li><a href="https://br.linkedin.com/company/elo7"><img src="img/linkedin.png"></a></li>
-        <li><a href="http://blog.elo7.com.br/"><img src="img/BLOG.png"></a></li>
+        <li><a id="facebook" href="https://www.facebook.com/Elo7br"><img src="img/facebook.png"></a></li>
+        <li><a id="instagram" href="https://www.instagram.com/elo7br"><img src="img/instagram.png"></a></li>
+        <li><a id="googlePlus" href="https://plus.google.com/+Elo7Br"><img src="img/googleplus.png"></a></li>
+        <li><a id="pinterest" href="https://br.pinterest.com/elo7br"><img src="img/pinterest-light.png"></a></li>
+        <li><a id="twitter" href="https://twitter.com/elo7"><img src="img/twitter.png"></a></li>
+        <li><a id="linkedin" href="https://br.linkedin.com/company/elo7"><img src="img/linkedin.png"></a></li>
+        <li><a id="blog" href="http://blog.elo7.com.br/"><img src="img/BLOG.png"></a></li>
       </ul>
     </div>
 
-
+    <script src="js/app.js"></script>
     <script src="cordova.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
